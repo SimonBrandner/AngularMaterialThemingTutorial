@@ -1,0 +1,11 @@
+@mixin style-app-component($mat-theme) {
+	.custom-component {
+		height: 512px;
+		width: 512px;
+		background-color: mat-color(map-get($mat-theme, accent));
+	}
+}
+
+.container {
+	height: 100%;
+}

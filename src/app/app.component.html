@@ -1,0 +1,20 @@
+<mat-sidenav-container class="container">
+	<h1>Hello world</h1>
+	<mat-form-field>
+		<mat-select [(value)]="selectedTheme" (selectionChange)="themeChanged()">
+			<mat-option *ngFor="let theme of themes" [value]="theme">
+				{{theme}}
+			</mat-option>
+		</mat-select>
+	</mat-form-field>
+	<div>
+		<button mat-raised-button>Basic</button>
+		<button mat-raised-button color="primary">Primary</button>
+		<button mat-raised-button color="accent">Accent</button>
+		<button mat-raised-button color="warn">Warn</button>
+		<button mat-raised-button disabled>Disabled</button>
+	</div>
+	<div class="custom-component">
+		Custom component
+	</div>
+</mat-sidenav-container>
